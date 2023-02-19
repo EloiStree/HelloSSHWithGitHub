@@ -13,19 +13,18 @@ I am tired of forgeting how to setup SSH for GitHub. Let's note the steps.
 
 https://youtu.be/vExsOTgIOGw
 
-´´´
+```
 ssh-keygen -t ed25519 -C "mail@gmail.com"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 clip <~/.ssh/id_ed25519.pub
-´´´
-
+```
 
 ## Multi Account
 
 https://youtu.be/N2hMGEeYR7c
 
-´´´
+```
 // Example for a first account
 cd .ssh
 ssh-keygen
@@ -44,8 +43,5 @@ mv config.txt config
 
 // Example for a multi account
 ssh-keygen -f aliasName_id_rsa
-
-
-
-´´´
+```
 
